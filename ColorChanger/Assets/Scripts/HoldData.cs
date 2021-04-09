@@ -39,4 +39,5 @@ public class HoldData : MonoBehaviour
     public void AddClick() { minClicks++; }
     public void SetDefaultColor() { renderer.material.color = data.Color(); }
     public bool CheckMinMoreThenMaxClicks() { if (minClicks > maxClicks) return true; else { return false; } }
+    public ClickColorData GetData() { return data; }
 }
